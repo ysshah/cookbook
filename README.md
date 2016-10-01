@@ -20,13 +20,14 @@ First, you enter in your ingredients and recipes. The left column shows you your
 
 #### Easy
 
-* Change username / password
 * Display fraction of ingredients available
 * Optional ingredients in recipes
 * Keyboard shortcuts
 * Comment and clean up code
 * Better application name that's not already taken
 * Ingredient modal template
+* Change username / password
+* Delete account
 
 #### More difficult
 
