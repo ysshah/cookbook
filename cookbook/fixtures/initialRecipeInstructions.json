@@ -1,0 +1,713 @@
+[
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 118,
+  "fields": {
+    "recipe": 2,
+    "text": "Cut bananas",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 119,
+  "fields": {
+    "recipe": 2,
+    "text": "Mix everything",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 120,
+  "fields": {
+    "recipe": 3,
+    "text": "Toast in _______ at level _______ for ______ minutes",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 121,
+  "fields": {
+    "recipe": 16,
+    "text": "Boil 1.5 teacups (225 ml) of water per \"cake\" of maggi noodles (Normal pack has 4)",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 122,
+  "fields": {
+    "recipe": 16,
+    "text": "Add maggi noodles and tastemaker to water",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 123,
+  "fields": {
+    "recipe": 16,
+    "text": "Cook for 2 minutes, stir occasionally",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 124,
+  "fields": {
+    "recipe": 16,
+    "text": "Pour into bowl, do not remove water",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 125,
+  "fields": {
+    "recipe": 18,
+    "text": "Chop tomatoes (big pieces), onions",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 126,
+  "fields": {
+    "recipe": 18,
+    "text": "Cook potatoes, chop",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 127,
+  "fields": {
+    "recipe": 18,
+    "text": "Mince garlic",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 128,
+  "fields": {
+    "recipe": 18,
+    "text": "Butter",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 129,
+  "fields": {
+    "recipe": 18,
+    "text": "While butter is melting, put salt, harldar (turmeric), Rajwadi garam masala, mirchu (red paprika), dhanajeeru",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 130,
+  "fields": {
+    "recipe": 18,
+    "text": "Saute\u00e9 onions",
+    "number": 6
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 131,
+  "fields": {
+    "recipe": 18,
+    "text": "Add tomatoes",
+    "number": 7
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 132,
+  "fields": {
+    "recipe": 20,
+    "text": "Coat pan with olive oil",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 133,
+  "fields": {
+    "recipe": 20,
+    "text": "Place potstickers in pan",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 134,
+  "fields": {
+    "recipe": 20,
+    "text": "Once it sizzles, dump a little water and close the lid",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 135,
+  "fields": {
+    "recipe": 20,
+    "text": "Flip potstickers",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 136,
+  "fields": {
+    "recipe": 20,
+    "text": "Might dump water multiple times",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 137,
+  "fields": {
+    "recipe": 20,
+    "text": "Wait until potstickers are translucent / cooked",
+    "number": 6
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 138,
+  "fields": {
+    "recipe": 20,
+    "text": "Dip in Sriracha / soy sauce",
+    "number": 7
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 139,
+  "fields": {
+    "recipe": 21,
+    "text": "Chop lettuce, tomatoes",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 140,
+  "fields": {
+    "recipe": 21,
+    "text": "Heat small pan (low heat), coat with butter and dump beans and taco seasoning on it. Stir beans occasionally for 15 minutes",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 141,
+  "fields": {
+    "recipe": 21,
+    "text": "Finely shred cheese",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 142,
+  "fields": {
+    "recipe": 21,
+    "text": "Put taco shells in oven",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 143,
+  "fields": {
+    "recipe": 21,
+    "text": "Make tacos: coat shells with beans -> cheese -> salsa -> tomatoes -> lettuce -> cheese",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 144,
+  "fields": {
+    "recipe": 22,
+    "text": "Preheat oven to 450 \u00b0F",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 145,
+  "fields": {
+    "recipe": 22,
+    "text": "Bake for ______ minutes",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 146,
+  "fields": {
+    "recipe": 27,
+    "text": "Proportions: 60% doodhi, 20% green onions, 20% cauliflower / potato, 5-10% almonds to taste",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 147,
+  "fields": {
+    "recipe": 27,
+    "text": "Chop doodhi, potatoes / cauliflowers, green onions",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 148,
+  "fields": {
+    "recipe": 27,
+    "text": "Put in little water and pressure cook for around 15 minutes",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 149,
+  "fields": {
+    "recipe": 27,
+    "text": "Boil / microwave almonds separately and remove skins",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 150,
+  "fields": {
+    "recipe": 27,
+    "text": "Blend everything to thick consistency",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 151,
+  "fields": {
+    "recipe": 27,
+    "text": "Add salt",
+    "number": 6
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 152,
+  "fields": {
+    "recipe": 27,
+    "text": "Boil",
+    "number": 7
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 153,
+  "fields": {
+    "recipe": 27,
+    "text": "Serve with black pepper and chopped almonds",
+    "number": 8
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 154,
+  "fields": {
+    "recipe": 28,
+    "text": "Heat 2 tbsp of ghee",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 155,
+  "fields": {
+    "recipe": 28,
+    "text": "Saut\u00e9 paneer cubes until brown; set aside",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 156,
+  "fields": {
+    "recipe": 28,
+    "text": "Add 1 tbsp of ghee, saut\u00e9 onions 5-6 mins",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 157,
+  "fields": {
+    "recipe": 28,
+    "text": "Add green chili and ginger, saut\u00e9 for 2-3 mins",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 158,
+  "fields": {
+    "recipe": 28,
+    "text": "Add cooked spinach, salt, 1/2 tsp haldar; mix and cook",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 159,
+  "fields": {
+    "recipe": 29,
+    "text": "Cut all vegetables",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 160,
+  "fields": {
+    "recipe": 29,
+    "text": "Boil water, add salt and olive oil",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 161,
+  "fields": {
+    "recipe": 29,
+    "text": "Saut\u00e9 onions for 3-4 minutes",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 162,
+  "fields": {
+    "recipe": 29,
+    "text": "Add garlic and cook for 1-2 minutes",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 163,
+  "fields": {
+    "recipe": 29,
+    "text": "Add pasta",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 164,
+  "fields": {
+    "recipe": 29,
+    "text": "Add rest of vegetables, seasoning, salt",
+    "number": 6
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 165,
+  "fields": {
+    "recipe": 29,
+    "text": "Drain water from pasta",
+    "number": 7
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 166,
+  "fields": {
+    "recipe": 29,
+    "text": "Cook vegetables until ready",
+    "number": 8
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 167,
+  "fields": {
+    "recipe": 29,
+    "text": "Combine vegetables and pasta",
+    "number": 9
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 168,
+  "fields": {
+    "recipe": 30,
+    "text": "Grate paneer",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 169,
+  "fields": {
+    "recipe": 30,
+    "text": "Dice 1/2 onion",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 170,
+  "fields": {
+    "recipe": 30,
+    "text": "Dice 1 tomato",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 171,
+  "fields": {
+    "recipe": 30,
+    "text": "Chop 1/2 cup cilantro",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 172,
+  "fields": {
+    "recipe": 30,
+    "text": "Heat 2 tbsp of ghee",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 173,
+  "fields": {
+    "recipe": 30,
+    "text": "Add onions and saut\u00e9 for 5-6 mins",
+    "number": 6
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 174,
+  "fields": {
+    "recipe": 30,
+    "text": "Add tomatoes and saut\u00e9 for 4-5 mins",
+    "number": 7
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 175,
+  "fields": {
+    "recipe": 30,
+    "text": "Add grated paneer, salt, 1/2 tsp haldar, 1/2 tsp red chili powder, 3/4 tsp garam masala, dhanajeeru, mix and cook for 3-4 mins",
+    "number": 8
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 176,
+  "fields": {
+    "recipe": 30,
+    "text": "Add chopped cilantro, mix and cook for 2-3 mins",
+    "number": 9
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 177,
+  "fields": {
+    "recipe": 31,
+    "text": "Fill a large pot with lightly salted water and bring to a boil. Stir in penne and return to a boil. Cook pasta uncovered, stirring occasionally, until cooked through but still firm to the bite, about 11 minutes; drain.",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 178,
+  "fields": {
+    "recipe": 31,
+    "text": "Place asparagus into a saucepan, add a little water, and place over medium heat; cover pan and let asparagus steam until bright green and tender, 3 to 4 minutes. Drain.",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 179,
+  "fields": {
+    "recipe": 31,
+    "text": "Heat olive oil with butter and lemon juice in a large saucepan over medium-low heat until butter melts; cook and stir shallot in hot oil and butter mixture until it just begins to soften, 1 to 2 minutes. Stir garlic into shallot mixture and cook until shallot and garlic are opaque, 3 more minutes. Stir asparagus into mixture; cook until heated through, about 5 minutes.",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 180,
+  "fields": {
+    "recipe": 31,
+    "text": "Toss pasta with vegetables to combine; mix tomato and basil into salad and serve warm.",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 181,
+  "fields": {
+    "recipe": 32,
+    "text": "Chop tomatoes, onions, avacados",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 182,
+  "fields": {
+    "recipe": 32,
+    "text": "Place nachos and cheese on plate and microwave for ____ seconds",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 183,
+  "fields": {
+    "recipe": 32,
+    "text": "Top nachos with tomatoes, onions, and avacados",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 184,
+  "fields": {
+    "recipe": 33,
+    "text": "Bake potatoes",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 185,
+  "fields": {
+    "recipe": 33,
+    "text": "Cut potatoes, tomatoes, cucumbers (long)",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 186,
+  "fields": {
+    "recipe": 33,
+    "text": "Toast bread",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 187,
+  "fields": {
+    "recipe": 33,
+    "text": "Apply butter and rest of ingredients",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 188,
+  "fields": {
+    "recipe": 35,
+    "text": "Melt butter in pot over medium heat",
+    "number": 1
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 189,
+  "fields": {
+    "recipe": 35,
+    "text": "Stir in carrots, onion, celery, garlic and cook until tender",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 190,
+  "fields": {
+    "recipe": 35,
+    "text": "Pour in broth and bring to a boil over high heat",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 191,
+  "fields": {
+    "recipe": 35,
+    "text": "Once boiling, add noodles and seasonings",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 192,
+  "fields": {
+    "recipe": 35,
+    "text": "Reduce heat to medium-low, cover, and simmer for 5 minutes",
+    "number": 5
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 193,
+  "fields": {
+    "recipe": 37,
+    "text": "Add sauce",
+    "number": 2
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 194,
+  "fields": {
+    "recipe": 37,
+    "text": "Cook pasta and combine",
+    "number": 3
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 195,
+  "fields": {
+    "recipe": 37,
+    "text": "(Alternative) If using marinara / pesto sauce, use olive oil instead of butter",
+    "number": 4
+  }
+},
+{
+  "model": "cookbook.recipeinstruction",
+  "pk": 196,
+  "fields": {
+    "recipe": 37,
+    "text": "Saut\u00e9 onion, garlic, mushroom",
+    "number": 1
+  }
+}
+]
