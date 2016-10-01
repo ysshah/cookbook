@@ -1,7 +1,8 @@
 import json
 from django.http import HttpResponse, Http404
-from django.contrib.auth import authenticate, login
 from django.shortcuts import render
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
 
 from .models import *
 
@@ -146,6 +147,22 @@ def logUserIn(request):
             data = json.dumps({'code': 1})
         else:
             data = json.dumps({'code': 0})
+        return HttpResponse(data, content_type='application/json')
+    else:
+        raise Http404
+
+
+def createUser(request):
+    if request.is_ajax() and request.POST:
+        username = request.POST['username']
+        if User.objects.filter(username=username).exists():
+            data = json.dumps({'code': 0})
+        else:
+            password = request.POST['password']
+            User.objects.create_user(username=username, password=password)
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            data = json.dumps({'code': 1})
         return HttpResponse(data, content_type='application/json')
     else:
         raise Http404

@@ -36,6 +36,8 @@ def getContext(request):
         ingredientNames = ingredients.values_list('name', flat=True)
         recipes = Recipe.objects.filter(user=request.user)
         for recipe in recipes:
+            recipe.instructions = RecipeInstruction.objects.filter(
+                recipe=recipe).order_by('number')
             recipeIngredients = RecipeIngredient.objects.filter(
                 recipe=recipe).order_by('number')
             if recipeIngredients.exists():
@@ -68,8 +70,6 @@ def getContext(request):
                 else:
                     recipe.able = 'no'
 
-        recipe.instructions = RecipeInstruction.objects.filter(
-            recipe=recipe).order_by('number')
         locations = [loc[1] for loc in Ingredient.LOCATIONS]
 
         context = {

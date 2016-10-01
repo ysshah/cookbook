@@ -139,16 +139,13 @@
     </div>
 
     <div class="container">
-        <form class="create" action="javascript:void(0);">{% csrf_token %}
+        <form class="create">{% csrf_token %}
             <h4>Create Account</h4>
             <div class="form-group">
                 <input class="form-control username create" type="text" name="username" placeholder="Username" required>
             </div>
             <div class="form-group">
                 <input class="form-control password create" type="password" name="password" placeholder="Password" required>
-            </div>
-            <div class="form-group">
-                <input class="form-control email create" type="email" name="email" placeholder="Email" required>
             </div>
             <button type="submit" class="btn btn-default create">Create Account</button>
         </form>

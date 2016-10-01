@@ -10,6 +10,7 @@ urlpatterns = [
 
     url(r'^login$', ajax.logUserIn, name='login'),
     url(r'^logout$', views.logUserOut, name='logout'),
+    url(r'^createUser$', ajax.createUser, name='createUser'),
 
     url(r'^addIngredient$', ajax.addIngredient, name='addIngredient'),
     url(r'^updateIngredient$', ajax.updateIngredient, name='updateIngredient'),

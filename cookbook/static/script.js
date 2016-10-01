@@ -17,6 +17,23 @@ $(document).ready(function() {
         });
     });
 
+    /* Ajax create user */
+    $('form.create').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'createUser',
+            data: $(this).serialize(),
+            success: function(data) {
+                if (data.code == 1) {
+                    location.reload();
+                } else {
+                    alert('Username already taken');
+                }
+            }
+        });
+    });
+
     /* Ajax add ingredient */
     $('form.new-ingredient').submit(function(e) {
         e.preventDefault();
