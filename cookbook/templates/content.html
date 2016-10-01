@@ -1,0 +1,84 @@
+<div class="column">
+    <div class="title">Current Ingredients</div>
+    <button id="newIngredientsModal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#new-ingredients">Add</button>
+    <table id="ingredients">
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th class="remaining">Days remaining</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ingredient in ingredients %}
+            <tr class="ingredient" id="{{ ingredient.id }}" data-name="{{ ingredient.name }}" data-location="{{ ingredient.location }}" data-purchase="{{ ingredient.purchase_date|date:'Y-m-d' }}" data-expiration="{{ ingredient.expiration_date|date:'Y-m-d' }}">
+                <td>
+                    <div>{{ ingredient.name }}</div>
+                </td>
+                <td class="remaining">{{ ingredient.days_remaining }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="border"></div>
+<div class="column">
+    <div class="title">Items</div>
+    <table class="items">
+        <thead>
+            <tr>
+                <th>Meal</th>
+                <th class="remaining">Days Remaining</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for recipe in recipes %}
+            <tr class="item {{ recipe.able }}" id="{{ recipe.id }}">
+                <td>{{ recipe.name }}</td>
+                <td class="remaining">{{ recipe.days_remaining }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="border"></div>
+<div class="column">
+    <div class="title">Recipe</div>
+    <button id="newRecipeModal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#new-recipe">Add New Recipe</button>
+    <div id="recipes">
+    {% for recipe in recipes %}
+        <div class="recipe" id="r{{ recipe.id }}">
+            <div class="name">{{ recipe.name }}</div>
+
+            {% if recipe.ingredients %}
+                <table class="ingredients">
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th class="remaining">Days Remaining</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for ingredient in recipe.ingredients %}
+                        <tr>
+                            <td class="ingredient {{ ingredient.able }} ">{{ ingredient.name }}</td>
+                            <td class="remaining">{{ ingredient.days_remaining }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+
+            {% if recipe.instructions %}
+                <div class="instr-title">Instructions</div>
+                <ol class="instructions">
+                {% for instruction in recipe.instructions %}
+                        <li class="instruction">{{ instruction.text }}</li>
+                {% endfor %}
+                </ol>
+            {% endif %}
+
+            <button class="btn btn-default edit-recipe" id="{{ recipe.id }}">Edit</button>
+        </div>
+    {% endfor %}
+    </div>
+</div>

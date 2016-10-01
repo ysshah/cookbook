@@ -1,0 +1,233 @@
+[
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "basil",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "maple syrup",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "oregano",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "thyme",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "jelly",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "pasta",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "popcorn",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "rosemary",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "vegetable broth",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "egg noodles",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "cereal",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "nuts",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "marinara sauce",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "salsa",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "waffles",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "alfredo sauce",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "chundo",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "olive oil",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "salt",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "sauce",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "sugar",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "black pepper",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "sandwich masala",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "peanut butter",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "butter",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "cream cheese",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "corn tortillas",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "macaroni and cheese",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "green peas",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "mexican cheese blend",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "spring green mix",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "bell peppers",
+      "user": 1
+    }
+  },
+  {
+    "model": "cookbook.UserIngredient",
+    "fields": {
+      "name": "broccoli",
+      "user": 1
+    }
+  }
+]

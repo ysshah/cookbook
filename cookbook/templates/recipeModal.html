@@ -1,0 +1,81 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            {% if newRecipeModal %}
+                <h4 class="modal-title">Add New Recipe</h4>
+            {% else %}
+                <h4 class="modal-title">Edit Recipe</h4>
+            {% endif %}
+        </div>
+        <div class="modal-body">
+            {% if newRecipeModal %}
+            <form class="new-recipe">
+            {% else %}
+            <form class="edit-recipe">
+            {% endif %}
+                {% if newRecipeModal %}
+                <input type="submit" id="submit-new-recipe" class="hidden">
+                {% else %}
+                <input type="submit" id="submit-edit-recipe" class="hidden">
+                <input name="id" class="hidden id" value="{{ recipe.id }}">
+                {% endif %}
+                <div class="form-group">
+                    <label class="control-label" for="recipe-name">Recipe Name</label>
+                    {% if newRecipeModal %}
+                        <input name="name" class="form-control name" type="text" placeholder="Required" required>
+                    {% else %}
+                        <input name="name" class="form-control name" type="text" placeholder="Required" value="{{ recipe.name }}" required>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Meal Type</label>
+                    <select name="mealType" class="form-control">
+                        <option>Breakfast</option>
+                        <option>Lunch / Dinner</option>
+                        <option>Snacks</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Ingredients</label>
+                    {% if newRecipeModal %}
+                    <ul class="new-recipe">
+                    {% else %}
+                    <ul class="edit-recipe">
+                        {% for ingredient in ingredients %}
+                        <li><input name="ingrArray[]" class="form-control recipe-ingredient" type="text" value="{{ ingredient.name }}"></li>
+                        {% endfor %}
+                    {% endif %}
+                        <li><input name="ingrArray[]" class="form-control recipe-ingredient last" type="text"></li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label>Instructions</label>
+                    {% if newRecipeModal %}
+                    <ol class="new-recipe">
+                    {% else %}
+                    <ol class="edit-recipe">
+                        {% for instruction in instructions %}
+                        <li><textarea name="instArray[]" class="form-control recipe-instruction" type="text">{{ instruction.text }}</textarea></li>
+                        {% endfor %}
+                    {% endif %}
+                        <li><textarea name="instArray[]" class="form-control recipe-instruction last" type="text"></textarea></li>
+                    </ol>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            {% if not newRecipeModal %}
+            <button id="{{ recipe.id }}" class="btn btn-danger pull-left deleteRecipe">Delete</button>
+            {% endif %}
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            {% if newRecipeModal %}
+                <label for="submit-new-recipe" class="btn btn-primary submit">Save</label>
+            {% else %}
+                <label for="submit-edit-recipe" class="btn btn-primary submit">Save</label>
+            {% endif %}
+        </div>
+    </div>
+</div>

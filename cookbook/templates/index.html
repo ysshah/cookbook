@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Cookbook</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <script type="text/javascript" src="{% static 'jquery-3.1.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jquery.tablesorter.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js.cookie.js' %}"></script>
+    <script type="text/javascript" src="{% static 'script.js' %}"></script>
+</head>
+<body>
+    <div class="alerts-container">
+        <div class="alert alert-success">Ingredient basil deleted.</div>
+        <div class="alert alert-danger"></div>
+    </div>
+
+
+{% if user.is_authenticated %}
+    <div id="userinfo">
+        <div>User logged in: {{ user.username }}</div>
+        <form action="logout">
+            <input type="submit" value="Log Out">
+        </form>
+    </div>
+
+    <div class="modal fade" id="new-recipe" tabindex="-1" role="dialog">
+    {% include "recipeModal.html" %}
+    </div>
+
+    <div class="modal fade" id="edit-recipe" tabindex="-1" role="dialog"></div>
+
+    <div class="modal fade bs-example-modal-lg" id="new-ingredients" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Add Ingredient</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="new-ingredient">
+                        <input type="submit" id="submit-new-ingredients" class="hidden">
+                        <div id="form-name" class="form-group">
+                            <label class="control-label">Name</label>
+                            <input name="name" type="text" class="form-control new-ingredient last" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <select name="location" class="form-control location">
+                            {% for location in locations %}
+                                <option>{{ location }}</option>
+                            {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Purchase Date</label>
+                            <input name="purchase" type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Expiration Date</label>
+                            <input name="expiration" type="date" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <label for="submit-new-ingredients" class="btn btn-primary">Add</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-lg" id="edit-ingredient" tabindex="-1" role="dialog" aria-labelledby="edit-ingredient-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="edit-ingredient-label">Edit Ingredient</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="edit-ingredient">
+                        <input type="submit" id="submit-edit-ingredient" class="hidden">
+                        <input name="id" class="hidden id">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input name="name" type="text" class="form-control name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <select name="location" class="form-control location">
+                            {% for location in locations %}
+                                <option>{{ location }}</option>
+                            {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Purchase Date</label>
+                            <input name="purchase" type="date" class="form-control purchase">
+                        </div>
+                        <div class="form-group">
+                            <label>Expiration Date</label>
+                            <input name="expiration" type="date" class="form-control expiration">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger pull-left deleteIngredient" data-delete="ingredients">Delete</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <label for="submit-edit-ingredient" class="btn btn-primary">Save</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+    {% include "content.html" %}
+    </div>
+
+{% else %}
+
+    <div class="container">
+        <form class="login">{% csrf_token %}
+            <h4>Log In</h4>
+            <div class="form-group">
+                <input class="form-control username login" type="text" name="username" placeholder="Username or Email" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control password login" type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-default login">Log In</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <form class="create" action="javascript:void(0);">{% csrf_token %}
+            <h4>Create Account</h4>
+            <div class="form-group">
+                <input class="form-control username create" type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control password create" type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control email create" type="email" name="email" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn btn-default create">Create Account</button>
+        </form>
+    </div>
+
+{% endif %}
+
+</body>
+</html>

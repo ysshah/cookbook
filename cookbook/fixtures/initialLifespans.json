@@ -1,0 +1,165 @@
+[
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "bagels",
+      "room_temperature": 7,
+      "fridge": 14,
+      "freezer": 180
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "bread",
+      "room_temperature": 7,
+      "fridge": 14,
+      "freezer": 180
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "bananas",
+      "room_temperature": 5,
+      "fridge": 7,
+      "freezer": 90
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "grapes",
+      "room_temperature": 5,
+      "fridge": 10,
+      "freezer": 150
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "broccoli",
+      "fridge": 5,
+      "freezer": 365
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "carrots",
+      "fridge": 35
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "baby carrots",
+      "fridge": 28
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "cherries",
+      "fridge": 7,
+      "freezer": 365
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "onions",
+      "room_temperature": 90,
+      "fridge": 90,
+      "freezer": 365
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "garlic",
+      "room_temperature": 150,
+      "fridge": 150,
+      "freezer": 365
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "crimini mushrooms",
+      "fridge": 10
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "oranges",
+      "fridge": 21,
+      "freezer": 60
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "strawberries",
+      "room_temperature": 2,
+      "fridge": 7,
+      "freezer": 240
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "zucchini",
+      "room_temperature": 5,
+      "fridge": 7
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "apples",
+      "room_temperature": 7,
+      "fridge": 28,
+      "freezer": 365
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "celery",
+      "fridge": 28
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "mandarins",
+      "room_temperature": 7,
+      "fridge": 14,
+      "freezer": 365
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "cucumbers",
+      "fridge": 7
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "tomatoes",
+      "room_temperature": 7,
+      "fridge": 14
+    }
+  },
+  {
+    "model": "cookbook.Lifespan",
+    "fields": {
+      "ingredient": "bell peppers",
+      "fridge": 14
+    }
+  }
+]
