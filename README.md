@@ -45,6 +45,10 @@ First, you enter in your ingredients and recipes. The left column shows you your
 * Option to hide items without required ingredients
 * Create a mobile view
 
+#### Optional
+
+* Use Django forms instead of manually creating them
+
 ## Contribute
 
 Clone the repository, install the dependencies, migrate the models, and load the fixtures (or enter in your own ingredients and recipes). You can make whatever improvements you would like - I will be extremely grateful for any pull requests. Thank you!
