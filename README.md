@@ -26,6 +26,7 @@ First, you enter in your ingredients and recipes. The left column shows you your
 * Keyboard shortcuts
 * Comment and clean up code
 * Better application name that's not already taken
+* Ingredient modal template
 
 #### More difficult
 
